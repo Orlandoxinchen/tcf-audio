@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TCF 听力音频</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+/* Layout: one narrow column of audio tracks, read on a phone after scanning a printed QR code */
+:root{--bg:#f3f5f8;--card:#ffffff;--ink:#16202c;--muted:#5d6878;--line:#d9dfe7;--accent:#1d4f91;--hl:#e3ecf8;
+--serif:"Source Serif 4",Georgia,serif;--sans:"Noto Sans SC","PingFang SC",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151c;--card:#18202b;--ink:#e3e8ef;--muted:#9aa5b5;--line:#2a3443;--accent:#86aee6;--hl:#1e2b3d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10151c;--card:#18202b;--ink:#e3e8ef;--muted:#9aa5b5;--line:#2a3443;--accent:#86aee6;--hl:#1e2b3d;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
+.wrap{max-width:640px;margin:0 auto;padding-inline:16px;padding-block:28px 60px;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:6px}
+h1{font-size:24px;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--muted);font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:6px}
+nav a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:4px;padding:2px 8px;background:var(--card);font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:12px}
+h2{font-size:17px;margin:8px 0 0}
+.track{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;scroll-margin-top:12px}
+.track:target{border-color:var(--accent);box-shadow:0 0 0 3px var(--hl)}
+.meta{font-size:12.5px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.lv{font-weight:700;color:var(--accent);border:1px solid currentColor;border-radius:3px;padding:0 5px;font-size:11.5px}
+h3{font-family:var(--serif);font-weight:600;font-size:20px;margin:0;line-height:1.3}
+audio{width:100%}
+.speed{display:flex;gap:6px}
+.speed button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:4px;padding:4px 10px;cursor:pointer}
+.speed button.on{background:var(--accent);border-color:var(--accent);color:var(--card)}
+.speed button:focus-visible,summary:focus-visible,nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+summary{cursor:pointer;color:var(--accent);font-size:14px}
+.tx{font-family:var(--serif);font-size:17px;line-height:1.65;padding-top:6px}
+.tx p{margin:0 0 10px}
+footer{font-size:13px;color:var(--muted)}
+body{margin:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>TCF 听力音频</h1><p>每篇先不看原文听两遍，写下听到的数字、地点和人名，再点“显示原文”跟读。不确定的地方可以调成 0.75× 慢速再听。</p><nav><a href="#w1-1">W1·1</a><a href="#w1-2">W1·2</a><a href="#w1-3">W1·3</a><a href="#w1-4">W1·4</a><a href="#w1-5">W1·5</a><a href="#w2-1">W2·1</a><a href="#w2-2">W2·2</a><a href="#w2-3">W2·3</a><a href="#w2-4">W2·4</a><a href="#w2-5">W2·5</a></nav></header>
+<section><h2>第 1 周</h2><article class="track" id="w1-1">
+<div class="meta"><span class="lv">A2</span>第 1 周 · 文章 1 · 加拿大口音</div>
+<h3 lang="fr">Enfin un appartement !</h3>
+<audio id="au-w1-1" controls preload="none" src="audio/w1-1.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w1-1" data-r="0.75">0.75×</button><button type="button" data-a="au-w1-1" data-r="1" class="on">1×</button><button type="button" data-a="au-w1-1" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Salut Léa,</p><p>Bonne nouvelle : j&#x27;ai enfin trouvé un appartement ! Il est dans le quartier Rosemont, à dix minutes du métro. Il y a une chambre, un salon et une petite cuisine. Le loyer est de 1 300 dollars par mois, chauffage compris. C&#x27;est un peu cher, mais le quartier est calme et il y a une épicerie au coin de la rue.</p><p>Je déménage le samedi 14 novembre. Est-ce que tu es disponible ce jour-là ? J&#x27;ai besoin d&#x27;aide pour porter les boîtes, et je n&#x27;ai pas de voiture. Si tu peux venir, je t&#x27;invite au restaurant le soir pour te remercier !</p><p>Réponds-moi avant jeudi, s&#x27;il te plaît.</p><p>À bientôt,<br>Marc</p></div></details>
+</article><article class="track" id="w1-2">
+<div class="meta"><span class="lv">A2</span>第 1 周 · 文章 2 · 法国口音</div>
+<h3 lang="fr">Ma journée à Montréal</h3>
+<audio id="au-w1-2" controls preload="none" src="audio/w1-2.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w1-2" data-r="0.75">0.75×</button><button type="button" data-a="au-w1-2" data-r="1" class="on">1×</button><button type="button" data-a="au-w1-2" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Je m&#x27;appelle Lina, j&#x27;ai 29 ans et je suis arrivée à Montréal il y a six mois. Avant, je travaillais comme comptable à Shanghai. Aujourd&#x27;hui, je travaille dans une petite entreprise de logiciels, au centre-ville.</p><p>Ma journée commence tôt. Je me lève à six heures et demie et je prends le petit-déjeuner avec mon mari. Ensuite, je prends le métro : le trajet dure trente-cinq minutes. Dans le métro, j&#x27;écoute des podcasts en français, parce que je veux améliorer ma prononciation.</p><p>Au bureau, mes collègues sont très sympas, mais ils parlent vite ! Le midi, nous mangeons ensemble et je pose beaucoup de questions. Le soir, je suis souvent fatiguée. Pourtant, deux fois par semaine, je vais à un cours de français à la bibliothèque du quartier.</p><p>Mon objectif ? Réussir mon examen de français en mars et devenir résidente permanente. C&#x27;est difficile, mais je ne regrette rien : ici, j&#x27;ai une nouvelle vie.</p></div></details>
+</article><article class="track" id="w1-3">
+<div class="meta"><span class="lv">A2+</span>第 1 周 · 文章 3 · 加拿大口音</div>
+<h3 lang="fr">Ateliers de conversation en français</h3>
+<audio id="au-w1-3" controls preload="none" src="audio/w1-3.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w1-3" data-r="0.75">0.75×</button><button type="button" data-a="au-w1-3" data-r="1" class="on">1×</button><button type="button" data-a="au-w1-3" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>BIBLIOTHÈQUE DES ÉRABLES · SESSION D&#x27;HIVER</p><p>Vous venez d&#x27;arriver au Québec ? Vous voulez pratiquer votre français dans une ambiance détendue ? Rejoignez nos ateliers de conversation !</p><p>Pour qui ? Adultes de niveau débutant à intermédiaire (A2–B1).<br>Quand ? Du 12 janvier au 30 mars, le mardi de 18 h 30 à 20 h ou le samedi de 10 h à 11 h 30.<br>Où ? Salle 2, au deuxième étage. Ascenseur à côté de l&#x27;entrée principale.<br>Combien ? Gratuit pour les membres de la bibliothèque. La carte de membre est gratuite sur présentation d&#x27;une preuve d&#x27;adresse.<br>Thèmes : le logement, le travail, la santé, la vie de quartier.</p><p>Places limitées : 12 personnes par groupe. Inscription obligatoire au comptoir d&#x27;accueil ou par courriel (ateliers@bibliotheque-erables.example) avant le 5 janvier.</p><p>Attention : en cas d&#x27;absence à deux séances sans prévenir, votre place sera donnée à une personne de la liste d&#x27;attente. Pour toute question, n&#x27;hésitez pas à nous contacter.</p></div></details>
+</article><article class="track" id="w1-4">
+<div class="meta"><span class="lv">B1−</span>第 1 周 · 文章 4 · 法国口音</div>
+<h3 lang="fr">Le télétravail : une bonne idée ?</h3>
+<audio id="au-w1-4" controls preload="none" src="audio/w1-4.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w1-4" data-r="0.75">0.75×</button><button type="button" data-a="au-w1-4" data-r="1" class="on">1×</button><button type="button" data-a="au-w1-4" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Depuis quelques années, de plus en plus de Canadiens travaillent de la maison, au moins deux jours par semaine. Le télétravail est-il vraiment une bonne idée ? Les avis sont partagés.</p><p>D&#x27;abord, le télétravail fait gagner du temps. Dans les grandes villes, beaucoup de gens passent près d&#x27;une heure par jour dans les transports. Sans trajet, on peut dormir plus, faire du sport ou passer du temps en famille. Ensuite, beaucoup de salariés disent qu&#x27;ils sont plus concentrés à la maison, loin du bruit des bureaux.</p><p>Cependant, le télétravail présente aussi des inconvénients. Certaines personnes se sentent seules et perdent le contact avec leurs collègues. Pour les nouveaux employés, il est plus difficile d&#x27;apprendre le métier sans voir les autres travailler. De plus, quand on travaille dans sa cuisine ou sa chambre, il est difficile de séparer la vie professionnelle et la vie privée.</p><p>Alors, que faire ? Pour beaucoup d&#x27;experts, la meilleure solution est un modèle hybride : quelques jours à la maison, quelques jours au bureau. Ainsi, on garde les avantages des deux formules.</p></div></details>
+</article><article class="track" id="w1-5">
+<div class="meta"><span class="lv">B1−</span>第 1 周 · 文章 5 · 加拿大口音</div>
+<h3 lang="fr">Vivre en ville ou à la campagne ?</h3>
+<audio id="au-w1-5" controls preload="none" src="audio/w1-5.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w1-5" data-r="0.75">0.75×</button><button type="button" data-a="au-w1-5" data-r="1" class="on">1×</button><button type="button" data-a="au-w1-5" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Document 1 — Sophie, 34 ans, Montréal</p><p>« Pour moi, la ville, c&#x27;est la liberté. Tout est proche : mon travail, les magasins, les cinémas. Je n&#x27;ai pas besoin de voiture, je prends le métro ou le vélo. Il y a aussi plus d&#x27;offres d&#x27;emploi et plus d&#x27;activités culturelles. Bien sûr, les loyers sont chers et il y a du bruit, mais je ne pourrais pas vivre loin de tout. »</p><p>Document 2 — Paul, 41 ans, Ontario</p><p>« Il y a trois ans, nous avons quitté Toronto pour un petit village. Notre maison est plus grande et elle coûte moins cher que notre ancien appartement. Les enfants jouent dehors, l&#x27;air est pur et les voisins se connaissent. C&#x27;est vrai, il faut prendre la voiture pour tout et il y a peu de services. Mais avec le télétravail, la campagne est devenue possible pour notre famille. »</p><p>Modèle de résumé (40–60 mots)</p><p>Selon Sophie, la ville offre la liberté : tout est proche, les transports sont pratiques et on trouve plus d&#x27;emplois. En revanche, Paul préfère la campagne, où le logement est plus grand et moins cher et où la vie de famille est agréable, même si la voiture y est indispensable.</p></div></details>
+</article></section><section><h2>第 2 周</h2><article class="track" id="w2-1">
+<div class="meta"><span class="lv">A2</span>第 2 周 · 文章 1 · 加拿大口音</div>
+<h3 lang="fr">Le déménagement s&#x27;est bien passé !</h3>
+<audio id="au-w2-1" controls preload="none" src="audio/w2-1.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w2-1" data-r="0.75">0.75×</button><button type="button" data-a="au-w2-1" data-r="1" class="on">1×</button><button type="button" data-a="au-w2-1" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Salut Léa,</p><p>Merci encore pour samedi ! Grâce à toi, le déménagement s&#x27;est très bien passé. Pourtant, la journée a mal commencé : à neuf heures, l&#x27;ascenseur de mon nouvel immeuble est tombé en panne ! Nous avons donc monté tous les cartons par l&#x27;escalier jusqu&#x27;au quatrième étage. Le canapé n&#x27;est pas passé par la porte, alors mon voisin du dessous nous a prêté une corde et nous l&#x27;avons monté par le balcon.</p><p>Depuis, j&#x27;ai rangé presque toutes mes affaires. Hier, j&#x27;ai acheté une table et quatre chaises d&#x27;occasion, et j&#x27;ai enfin installé mon lit. Il me reste seulement les livres à ranger.</p><p>Pour te remercier, je t&#x27;invite à ma pendaison de crémaillère le samedi 28 novembre, vers 19 h. J&#x27;ai aussi invité mes nouveaux voisins. Apporte juste ta bonne humeur !</p><p>Bises,<br>Marc</p></div></details>
+</article><article class="track" id="w2-2">
+<div class="meta"><span class="lv">A2</span>第 2 周 · 文章 2 · 法国口音</div>
+<h3 lang="fr">Un dimanche chez mes grands-parents</h3>
+<audio id="au-w2-2" controls preload="none" src="audio/w2-2.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w2-2" data-r="0.75">0.75×</button><button type="button" data-a="au-w2-2" data-r="1" class="on">1×</button><button type="button" data-a="au-w2-2" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Dimanche dernier, je suis allée chez mes grands-parents, à Sherbrooke. D&#x27;habitude, j&#x27;y vais en voiture avec mes parents, mais cette fois, j&#x27;ai pris l&#x27;autobus, parce qu&#x27;ils sont partis en vacances en Floride.</p><p>Le voyage a duré deux heures et demie. Il a neigé presque tout le temps, mais le paysage était magnifique. Quand je suis arrivée, ma grand-mère m&#x27;a serrée dans ses bras et mon grand-père a préparé un chocolat chaud.</p><p>Ensuite, toute la famille s&#x27;est réunie pour le repas : mon oncle, ma tante et mes deux cousins sont venus aussi. Nous avons mangé une tourtière, le plat traditionnel de ma grand-mère, et nous avons beaucoup parlé de notre enfance. Mon cousin Julien nous a raconté son premier mois à l&#x27;université : il a perdu sa carte étudiante deux fois !</p><p>L&#x27;après-midi, nous nous sommes promenés dans le parc près de la maison. Le soir, je suis rentrée fatiguée mais heureuse. Ces repas de famille sont précieux : on se voit moins souvent qu&#x27;avant, alors chaque visite compte.</p></div></details>
+</article><article class="track" id="w2-3">
+<div class="meta"><span class="lv">A2+</span>第 2 周 · 文章 3 · 加拿大口音</div>
+<h3 lang="fr">Avis aux locataires</h3>
+<audio id="au-w2-3" controls preload="none" src="audio/w2-3.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w2-3" data-r="0.75">0.75×</button><button type="button" data-a="au-w2-3" data-r="1" class="on">1×</button><button type="button" data-a="au-w2-3" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>IMMEUBLE DU 1250, RUE DES PINS · MONTRÉAL, LE 2 NOVEMBRE</p><p>Madame, Monsieur,</p><p>Nous vous informons que des travaux d&#x27;entretien du système de chauffage auront lieu le mardi 10 novembre, de 9 h à 15 h. Pendant ces travaux, l&#x27;eau chaude sera coupée dans tout l&#x27;immeuble. Nous vous conseillons de remplir quelques bouteilles d&#x27;eau la veille.</p><p>Les techniciens devront entrer dans certains logements pour vérifier les radiateurs. Si vous habitez au 3e ou au 4e étage, merci de laisser l&#x27;accès libre à vos radiateurs. Si vous ne pouvez pas être présent, vous pouvez laisser votre clé au concierge avant 8 h 30.</p><p>Rappels :<br>• Les poubelles se sortent le mardi soir et le recyclage le jeudi soir, jamais avant 19 h.<br>• Il est interdit de laisser des vélos ou des poussettes dans l&#x27;escalier.<br>• Après 23 h, merci de limiter le bruit par respect pour vos voisins.</p><p>Pour signaler une fuite ou une panne, contactez le concierge au 514 555-0142 (du lundi au vendredi) ou, en cas d&#x27;urgence, la ligne 24 h sur 24 au 514 555-0199.</p><p>Merci de votre collaboration.<br>La gestion de l&#x27;immeuble</p></div></details>
+</article><article class="track" id="w2-4">
+<div class="meta"><span class="lv">B1−</span>第 2 周 · 文章 4 · 法国口音</div>
+<h3 lang="fr">La colocation : une bonne solution ?</h3>
+<audio id="au-w2-4" controls preload="none" src="audio/w2-4.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w2-4" data-r="0.75">0.75×</button><button type="button" data-a="au-w2-4" data-r="1" class="on">1×</button><button type="button" data-a="au-w2-4" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Avec la hausse des loyers, de plus en plus de jeunes adultes choisissent la colocation. À Montréal, par exemple, il n&#x27;est pas rare de partager un grand appartement à trois ou quatre. Mais vivre avec des colocataires, est-ce vraiment une bonne idée ?</p><p>Le premier avantage est évidemment économique. En partageant le loyer, l&#x27;électricité et Internet, chacun dépense beaucoup moins que s&#x27;il habitait seul. Ensuite, la colocation permet de rencontrer des gens. Pour une personne qui vient d&#x27;arriver dans une nouvelle ville, c&#x27;est souvent la façon la plus simple de se faire des amis et de pratiquer la langue.</p><p>Pourtant, la vie en colocation n&#x27;est pas toujours facile. Qui fait la vaisselle ? Qui sort les poubelles ? Ces petites questions peuvent vite devenir de grands conflits. Il faut aussi accepter d&#x27;avoir moins d&#x27;intimité : la cuisine, le salon et souvent la salle de bain sont partagés.</p><p>En réalité, tout dépend des colocataires. Avant de signer un bail, il est donc utile de se rencontrer, de discuter des règles de la maison et de se mettre d&#x27;accord sur le partage des tâches. Avec un peu d&#x27;organisation, la colocation peut être une expérience très positive.</p></div></details>
+</article><article class="track" id="w2-5">
+<div class="meta"><span class="lv">B1−</span>第 2 周 · 文章 5 · 加拿大口音</div>
+<h3 lang="fr">Faire ses courses : en ligne ou en magasin ?</h3>
+<audio id="au-w2-5" controls preload="none" src="audio/w2-5.m4a"></audio>
+<div class="speed" role="group" aria-label="播放速度"><button type="button" data-a="au-w2-5" data-r="0.75">0.75×</button><button type="button" data-a="au-w2-5" data-r="1" class="on">1×</button><button type="button" data-a="au-w2-5" data-r="1.25">1.25×</button></div>
+<details><summary>显示原文</summary><div class="tx" lang="fr"><p>Document 1 — Karim, 38 ans, Gatineau</p><p>« Depuis la naissance de notre deuxième enfant, je fais presque toutes mes courses en ligne. Je commande le dimanche soir et je reçois tout le mardi. Je gagne au moins deux heures par semaine et j&#x27;achète seulement ce qui est sur ma liste : je dépense donc moins. C&#x27;est vrai, les fruits ne sont pas toujours parfaits et la livraison coûte cinq dollars, mais pour une famille occupée, c&#x27;est très pratique. »</p><p>Document 2 — Hélène, 67 ans, Québec</p><p>« Moi, j&#x27;aime aller au marché et dans les petits commerces de mon quartier. Je choisis moi-même mes légumes, je compare les prix et je discute avec les commerçants, qui me connaissent depuis des années. Pour une retraitée qui vit seule, ces sorties sont aussi un moment social. Faire ses courses en ligne, c&#x27;est rapide, d&#x27;accord, mais on perd le contact humain et on aide moins les commerces locaux. »</p><p>Modèle de résumé (40–60 mots)</p><p>Pour Karim, les courses en ligne font gagner du temps et aident à contrôler son budget, même si les produits frais ne sont pas toujours parfaits. Hélène, au contraire, préfère les commerces de proximité : elle aime choisir ses produits, et ces sorties lui permettent de garder un lien social.</p></div></details>
+</article></section>
+<footer>音频是用电脑语音合成的，语调比真人平。适合练跟读和熟悉文章；真实听力请配合 RFI、TV5Monde 和题库练习。</footer>
+</div>
+<script>
+document.querySelectorAll('.speed button').forEach(b=>b.addEventListener('click',()=>{
+  const a=document.getElementById(b.dataset.a);a.playbackRate=parseFloat(b.dataset.r);
+  b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+}));
+document.querySelectorAll('audio').forEach(a=>a.addEventListener('play',()=>document.querySelectorAll('audio').forEach(o=>{if(o!==a)o.pause()})));
+</script>
+</body>
+</html>
